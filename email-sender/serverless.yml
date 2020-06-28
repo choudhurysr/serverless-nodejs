@@ -1,0 +1,22 @@
+service: email-sender
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+         - "ses:*"
+       Resource:
+         - "*"
+functions:
+  dailyEmail:
+    handler: handler.sendDailyEmail
+    events:
+      # Invoke the Lambda function everyday
+      - schedule: rate(1 day)
+  sundayEmail:
+    handler: handler.sendSundayEmail
+    events:
+      # Invoke the Lambda function every Sunday at 7am
+      - schedule: cron(0 7 ? * SUN *)
