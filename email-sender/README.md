@@ -20,6 +20,10 @@ serverless -v
 
 ## Deploy
 ```
+replace test@test.com in handler.js with email setup in SES
+then run below to deploy
+```
+```
 serverless deploy -v 
 ```
 
