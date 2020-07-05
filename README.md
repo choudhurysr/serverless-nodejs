@@ -12,12 +12,6 @@ A Serverless Nodejs Project that contains a set of Lamdas for building:
 * Do not have to reserve and pay for a fixed amount of bandwidth or number of servers
 * Services auto-scale based on load
 
-# Why Serverless?
-
-
-# Serverless Framework - https://www.serverless.com/
-The Serverless Framework gives you everything you need to develop, deploy, monitor and secure serverless applications on any cloud.
-
 
 # Prerequisites
 * Ensure Node is installed and check version using: `node -v`
@@ -29,3 +23,7 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
 * Run `aws configure` to update AWS IAM User access_key, secret_key, region
 * Check using: `aws configure list`
 * Update AWS access_key, secret_key in OS PATH variables
+
+
+# Serverless Framework - https://www.serverless.com/
+The Serverless Framework gives you everything you need to develop, deploy, monitor and secure serverless applications on any cloud.
