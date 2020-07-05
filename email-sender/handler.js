@@ -9,7 +9,7 @@ module.exports.sendDailyEmail = (event, context, callback) => {
 
     var emailHtml = fs.readFileSync('./dailyEmail.html', 'utf-8');
 
-    var toAndFromAdress = 'test@test.com'
+    var toAndFromAdress = 'sanglap@pandastrike.com'
     var params = {
         Destination: {
             ToAddresses: [toAndFromAdress]
