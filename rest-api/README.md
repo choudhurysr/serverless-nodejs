@@ -1,7 +1,7 @@
 # Overview
-A Serverless Nodejs Project 
-Create a set of Lambdas to perform CRUD operations on DynamoDB.
-Deploy as Rest API on AWS API Gateway
+* A Serverless Nodejs Project 
+* Create a set of Lambdas to perform CRUD operations on DynamoDB.
+* Deploy as Rest API on AWS API Gateway
 
 
 # Get Code and Deploy
@@ -26,3 +26,6 @@ Deploy as Rest API on AWS API Gateway
     
   Delete a Product:
   `DELETE - https://lcsb3ygau4.execute-api.us-east-1.amazonaws.com/dev/products/{id}`
+
+
+# Run and Test

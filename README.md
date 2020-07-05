@@ -4,7 +4,7 @@ A Serverless Nodejs Project that contains a set of Lamdas for building:
 * Use DynamoDB to perform CRUD operations
 * Send Email using AWS SES
 
-# Pre-requisites
+# Prerequisites
 * Ensure Node is installed and check version using: `node -v`
 * Check npm version: `npm -v`
 * Install serverless using: `npm install serverless -g` Check version: `serverless -v`
