@@ -16,4 +16,9 @@
 
 
 # Run and Test
-* Go to `https://***.execute-api.us-east-1.amazonaws.com/dev/hello`
+* Run API from Postman `https://***.execute-api.us-east-1.amazonaws.com/dev/hello`
+* Check AWS CloudWatch Logs
+* Make changes to handler function
+* Redeploy specific function: `serverless deploy --function hello`
+* Check AWS CloudWatch Logs
+
