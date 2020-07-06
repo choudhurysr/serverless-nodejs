@@ -1,7 +1,8 @@
 # Overview
-A Serverless Nodejs Project that contains a set of Lamdas for building:
-* Rest API using AWS API Gateway
-* Perform CRUD operations using Use DynamoDB
+A Serverless Nodejs Project 
+* Contains a set of Lamdas
+* Build Rest API using AWS API Gateway
+* Perform CRUD operations using DynamoDB
 * Send Email using AWS SES
 
 # What is Serverless?

@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports.hello = (event, context, callback) => {
+  //event - data passed by invoker as json
+  //context - contains information about the invocation, function, and execution environment
+  //callback - send a response to invoker
   const message = {
     message: "Hello there! Go Serverless! Your NodeJs function ran successfully!"
   }
