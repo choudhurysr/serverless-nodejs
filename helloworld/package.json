@@ -1,7 +1,0 @@
-{
-  "name": "rest-api",
-  "version": "1.0.0",
-  "description": "Serverless NodeJs REST API",
-  "author": "choudhurysr",
-  "license": "MIT"
-}
