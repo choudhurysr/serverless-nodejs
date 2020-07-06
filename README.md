@@ -1,8 +1,8 @@
 # Overview
 A Serverless Nodejs Project 
-* Contains a set of Lamda Functions
-    * Helloworld Lmabda
-    * Product Lamdas that perform CRUD operations on Products DynamoDB Table
+* Contains a set of Lambda Functions
+    * Helloworld Lambda
+    * Product Lambdas that perform CRUD operations on Products DynamoDB Table
 * Deploy as Rest API using Serverless Framework on AWS API Gateway
 
 
