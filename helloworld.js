@@ -5,7 +5,7 @@ module.exports.hello = (event, context, callback) => {
   //context - contains information about the invocation, function, and execution environment
   //callback - send a response to invoker
   const message = {
-    message: "Hello there! Go Serverless! Your NodeJs function ran successfully!"
+    message: "Hello there! Your Serverless NodeJs function ran successfully!"
   }
   console.log(JSON.stringify(message));
 
