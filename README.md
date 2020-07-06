@@ -1,8 +1,9 @@
 # Overview
 A Serverless Nodejs Project 
 * Contains a set of Lamda Functions
-* Perform CRUD operations using DynamoDB
-* Deploy as Rest API using AWS API Gateway
+    * Helloworld Lmabda
+    * Product Lamdas that perform CRUD operations on Products DynamoDB Table
+* Deploy as Rest API using Serverless Framework on AWS API Gateway
 
 
 # What is Serverless?
