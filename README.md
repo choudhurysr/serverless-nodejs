@@ -45,7 +45,9 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
 * Replace *** in below URI with correct value from above output.
 * Run API from Postman
   Helloworld
-  `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/hello`
+  ```
+    curl --location --request GET 'https://***.execute-api.us-east-1.amazonaws.com/dev/hello'
+  ```
 
   Add Product:
   ```
@@ -58,10 +60,14 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
   ```
 
   List Products:
-  `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/products`
+  ```
+    curl --location --request GET 'https://***.execute-api.us-east-1.amazonaws.com/dev/products'
+  ```
 
   Get a Product:
-  `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/products/{id}`
+  ```
+    curl --location --request GET 'https://***.execute-api.us-east-1.amazonaws.com/dev/products/{id}'
+  ```
 
   Update a Product:
   ```
@@ -75,10 +81,9 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
     
   Delete a Product:
   ```
-    curl --location --request DELETE 'https://ymb0egh3u1.execute-api.us-east-1.amazonaws.com/dev/products/{id}'
+    curl --location --request DELETE 'https://***.execute-api.us-east-1.amazonaws.com/dev/products/{id}'
   ```
-
-
+  
 * Check AWS CloudWatch Logs
 * Make changes to lambda function
 * Redeploy specific function: `serverless deploy --function <function-name>`
