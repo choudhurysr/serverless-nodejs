@@ -33,6 +33,7 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
 
 # Clone and Deploy
 * `git clone https://github.com/choudhurysr/serverless-nodejs.git`
+* `npm install`
 * `serverless deploy`
 
 
