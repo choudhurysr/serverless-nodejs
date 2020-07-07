@@ -1,5 +1,5 @@
 # Overview
-A Serverless Nodejs Project 
+A Serverless Nodejs Lambda Project for building Rest API
 * Contains a set of Lambda Functions
     * Helloworld Lambda
     * Product Lambdas that perform CRUD operations on Products DynamoDB Table
