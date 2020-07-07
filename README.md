@@ -31,19 +31,31 @@ A Serverless Nodejs Project
 The Serverless Framework gives you everything you need to develop, deploy, monitor and secure serverless applications on any cloud.
 
 
-# Get Code and Deploy
+# Clone and Deploy
 * `git clone https://github.com/choudhurysr/serverless-nodejs.git`
 
 * `cd rest-api`
 
-* Run `serverless deploy`
+* `serverless deploy`
 
-* Note endpoints from output.Replace *** with correct value from above output.
+
+
+# Run and Test
+* Note endpoints from `serverless deploy` output. 
+* Replace *** in below URI with correct value from above output.
+* Run API from Postman
   Helloworld
   `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/hello`
 
   Add Product:
-  `POST - https://***.execute-api.us-east-1.amazonaws.com/dev/products`
+  ```
+    curl --location --request POST 'https://***.execute-api.us-east-1.amazonaws.com/dev/products' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "productName": "product3",
+        "productDesc": "productDesc3"
+    }'
+  ```
 
   List Products:
   `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/products`
@@ -52,14 +64,21 @@ The Serverless Framework gives you everything you need to develop, deploy, monit
   `GET - https://***.execute-api.us-east-1.amazonaws.com/dev/products/{id}`
 
   Update a Product:
-  `PUT - https://lcsb3ygau4.execute-api.us-east-1.amazonaws.com/dev/products/{id}`
+  ```
+    curl --location --request PUT 'https://***.execute-api.us-east-1.amazonaws.com/dev/products/{id}' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "productName": "product4",
+        "productDesc": "productDesc4"
+    }'
+  ```
     
   Delete a Product:
-  `DELETE - https://lcsb3ygau4.execute-api.us-east-1.amazonaws.com/dev/products/{id}`
+  ```
+    curl --location --request DELETE 'https://ymb0egh3u1.execute-api.us-east-1.amazonaws.com/dev/products/{id}'
+  ```
 
 
-# Run and Test
-* Run API from Postman `https://***.execute-api.us-east-1.amazonaws.com/dev/hello`
 * Check AWS CloudWatch Logs
 * Make changes to lambda function
 * Redeploy specific function: `serverless deploy --function <function-name>`
