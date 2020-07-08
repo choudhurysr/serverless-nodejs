@@ -1,9 +1,10 @@
-# Serverless Nodejs Lambda Project for building Rest API
-* Contains a set of Lambda Functions
+# Serverless Nodejs Project for building Rest API
+* Contains a set of Nodejs Lambda Functions
     * Helloworld Lambda
-    * Product Lambdas that perform CRUD operations on Products DynamoDB Table
+    * Product Lambdas that perform CRUD operations on a DynamoDB Table
 * Lambdas will be triggered by http event
-* Deployed as Rest API using Serverless Framework on AWS API Gateway
+* serverless.yml contains specification for lambdas
+* Serverless Framework (https://www.serverless.com/) is used for deploying lambdas as Rest API on AWS API Gateway
 
 
 # What is Serverless?
@@ -25,11 +26,6 @@
 * Run `aws configure` to update AWS IAM User access_key, secret_key, region
 * Check using: `aws configure list`
 * Update AWS access_key, secret_key in OS PATH variables
-
-
-# Deploy using Serverless Framework - https://www.serverless.com/
-* serverless.yml will contain specification for lamdas
-* It will be used for deploying lamdas on AWS
 
 
 # Clone and Deploy

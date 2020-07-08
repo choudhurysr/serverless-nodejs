@@ -3,6 +3,8 @@ service: node-rest-api
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: dev
+  region: 
   environment:
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
