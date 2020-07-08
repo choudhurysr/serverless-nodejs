@@ -3,10 +3,8 @@
 const uuid = require('uuid');
 const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
 
-// The document client affords developers the use of native JavaScript
-// types instead of AttributeValues to simplify the JavaScript development
-// experience with Amazon DynamoDB.
-// - AWS Documentation
+// DocumentClient allows the use of native JavaScript types instead of AttributeValues 
+// for easier JavaScript development with Amazon DynamoDB.
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports.create = (event, context, callback) => {

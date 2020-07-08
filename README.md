@@ -1,9 +1,9 @@
-# Overview
-A Serverless Nodejs Lambda Project for building Rest API
+# Serverless Nodejs Lambda Project for building Rest API
 * Contains a set of Lambda Functions
     * Helloworld Lambda
     * Product Lambdas that perform CRUD operations on Products DynamoDB Table
-* Deploy as Rest API using Serverless Framework on AWS API Gateway
+* Lambdas will be triggered by http event
+* Deployed as Rest API using Serverless Framework on AWS API Gateway
 
 
 # What is Serverless?
@@ -28,7 +28,8 @@ A Serverless Nodejs Lambda Project for building Rest API
 
 
 # Deploy using Serverless Framework - https://www.serverless.com/
-The Serverless Framework gives you everything you need to develop, deploy, monitor and secure serverless applications on any cloud.
+* serverless.yml will contain specification for lamdas
+* It will be used for deploying lamdas on AWS
 
 
 # Clone and Deploy
